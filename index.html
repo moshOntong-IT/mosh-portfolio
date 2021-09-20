@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mosh</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="container">
+          <input type="checkbox" id="check" onclick="nav_appear()" />
+          <div class="logo-container">
+            <a href="#landing-page"
+              ><img id="logo-home" src="assets/logo.svg" alt=""
+            /></a>
+          </div>
+          <nav>
+            <div id="nav-menu">
+              <ul>
+                <li>
+                  <a
+                    href="#about-section"
+                    id="about-nav"
+                    onclick="clickNavBar()"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services-section"
+                    id="services-nav"
+                    onclick="clickNavBar()"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#skill-section"
+                    id="skills-nav"
+                    onclick="clickNavBar()"
+                    >Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio-section"
+                    id="portfolio-nav"
+                    onclick="clickNavBar()"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a href="" id="blog-nav" onclick="clickNavBar()">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <label class="burger-menu" for="check">
+              <i class="fa fa-bars"></i>
+            </label>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="row" id="landing-page">
+          <div class="col">
+            <h1>
+              <span>Hi! I am<br /></span>Muslimin
+            </h1>
+            <p><span>Mobile Developer</span>, based in Philippines.</p>
+
+            <div class="scroll-label">
+              <img src="assets/mouse.svg" alt="mouse" />
+              <p>Scroll down</p>
+              <img
+                src="assets/arrow-down.png"
+                alt="arrow-down"
+                id="scroll-arrow-down"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <img
+              id="landing-banner"
+              src="assets/code-1.svg"
+              alt="landing-banner"
+            />
+          </div>
+        </div>
+        <!--                  about section               -->
+        <div class="row" id="about-section">
+          <div class="col" id="about-banner">
+            <img src="assets/about-me-animate.svg" alt="about svg" />
+          </div>
+          <div class="col">
+            <div class="col-title">
+              <div class="back">
+                <h1>Profile</h1>
+              </div>
+              <div class="front">
+                <h2>About me</h2>
+              </div>
+            </div>
+            <div class="about-me">
+              <p>
+                Hi! I'm Muslimin Ontong, and I'm currently learning about mobile
+                development building and design. I'm also taking Angela's Udemy
+                Flutter course. I am a core member of the
+                <a
+                  href="https://developers.google.com/profile/u/109688872650027456934"
+                  target="_blank"
+                >
+                  Google Developer Student Club </a
+                >at the University of Immaculate Conception. For the time being,
+                I will do my job and accept your offer.
+              </p>
+            </div>
+            <div class="button-container">
+              <a href=""
+                ><div class="download-cv"><span>Download CV</span></div></a
+              >
+            </div>
+          </div>
+        </div>
+        <!--                  service section               -->
+        <div class="row" id="services-section">
+          <div class="col">
+            <div class="col-title">
+              <div class="back">
+                <h1>Services</h1>
+              </div>
+              <div class="front">
+                <h2>What I do?</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-container">
+            <div class="col card">
+              <div class="image-banner">
+                <img src="assets/service-1.svg" alt="design mobile" />
+              </div>
+              <p>Mobile Design</p>
+            </div>
+            <div class="col card" id="card-2">
+              <div class="image-banner">
+                <img src="assets/service-2.svg" alt="design mobile" />
+              </div>
+              <p>Build Mobile</p>
+            </div>
+            <div class="col card">
+              <div class="image-banner">
+                <img src="assets/service-3.svg" alt="design mobile" />
+              </div>
+              <p>Web to Mobile</p>
+            </div>
+          </div>
+        </div>
+        <!--                  skill section               -->
+        <div class="row" id="skill-section">
+          <div class="col">
+            <div class="col-title">
+              <div class="back">
+                <h1>Skills</h1>
+              </div>
+              <div class="front" id="col-title-skill">
+                <h2>Expertise</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row skill-container">
+          <div class="col skill-col">
+            <div class="skill">
+              <div class="skill-label">
+                <p>Flutter</p>
+                <p>60%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="bar" id="flutter-skill"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-label">
+                <p>Figma</p>
+                <p>80%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="bar" id="figma-skill"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col skill-col">
+            <div class="skill">
+              <div class="skill-label">
+                <p>React JS</p>
+                <p>5%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="bar" id="react-skill"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-label">
+                <p>Database (PostgreSql, MongoDB, Firebase)</p>
+                <p>20%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="bar" id="database-skill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--                  portfolio section               -->
+        <div class="row" id="portfolio-section">
+          <div class="col">
+            <div class="col-title">
+              <div class="back">
+                <h1>Portfolio</h1>
+              </div>
+              <div class="front" id="col-title-skill">
+                <h2>My works</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="slider">
+            <div class="img-box">
+              <img src="assets/mock-up-1.png" alt="project" />
+              <img src="assets/mock-up-2.png" alt="project" />
+              <img src="assets/mock-up-3.png" alt="project" />
+              <img src="assets/mock-up-4.png" alt="project" />
+            </div>
+          </div>
+        </div>
+        <!--                  contact section               -->
+        <div class="row">
+          <div class="col">
+            <div class="contact-banner">
+              <img src="assets/contact-me.svg" alt="contact banner" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-title" id="contact-title">
+              <div class="back">
+                <h1>Contact</h1>
+              </div>
+              <div class="front">
+                <h2>Get in touch</h2>
+              </div>
+            </div>
+            <form action="/" method="POST" class="client-form">
+              <input
+                type="text"
+                name="client_name"
+                id="client_input"
+                placeholder="Name"
+              />
+              <br />
+              <input
+                type="text"
+                name="client_email"
+                id="email_input"
+                placeholder="Email"
+              />
+              <br />
+              <input
+                type="textarea"
+                name="client_message"
+                id="message_input"
+                placeholder="Message"
+              />
+              <br />
+              <div class="button-submit-container">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer></footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
