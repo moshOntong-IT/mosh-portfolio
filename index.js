@@ -11,6 +11,9 @@ let clickNavBar = () => {
   nav_menu.style.left = "-100%";
 };
 
+let replySubmit = () => {
+  alert("Thank you for completing your form.");
+};
 let mediaQuery = (size) => {
   if (size.matches) {
     document.getElementById("logo-home").src = "assets/logo-small.svg";
