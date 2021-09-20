@@ -27,9 +27,6 @@ let mediaQuery = (size) => {
 
 let nav_appear = () => {
   if (burger_checking.checked === true) {
-    // if (nav_menu) {
-    //   console.log("exist 2");
-    // }
     nav_menu.style.left = 0;
   } else {
     nav_menu.style.left = "-100%";
