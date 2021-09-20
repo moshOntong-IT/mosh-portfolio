@@ -1,5 +1,3 @@
-let logo = document.getElementById("logo-home");
-let logo_2 = document.getElementById("logo-home-blog");
 let nav_menu = document.getElementById("nav-menu");
 let nav_menu_2 = document.getElementById("nav-menu");
 let burger_checking = document.getElementById("check");
@@ -16,16 +14,6 @@ let clickNavBar = () => {
 let replySubmit = () => {
   alert("Thank you for completing your form.");
 };
-let mediaQuery = (size) => {
-  if (size.matches) {
-    // document.getElementById("logo-home").src = "assets/logo-small.svg";
-    logo.src = "assets/logo-small.svg";
-    logo_2.src = "../assets/logo-small.svg";
-  } else {
-    logo.src = "assets/logo.svg";
-    logo_2.src = "../assets/logo.svg";
-  }
-};
 
 let nav_appear = () => {
   if (burger_checking.checked === true) {
@@ -34,11 +22,6 @@ let nav_appear = () => {
     nav_menu.style.left = "-100%";
   }
 };
-
-//fetching mediaquery
-var x = window.matchMedia("(max-width:  768px)");
-mediaQuery(x);
-x.onchange = mediaQuery;
 
 //apear nav menu
 nav_appear(burger_checking.checked);
