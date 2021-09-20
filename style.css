@@ -359,9 +359,22 @@ input[type="textarea"] {
 }
 
 footer {
+  position: relative;
   width: 100%;
   height: var(--footer-height);
   background-color: #faac64;
+}
+
+footer .social-media {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-media img:not(:nth-child(4)) {
+  margin-left: 1rem;
 }
 /* --------------------------------------------- */
 /* mobile */
@@ -564,7 +577,9 @@ footer {
   input[type="textarea"] {
     height: 50%;
   }
-
+  footer .social-media img {
+    width: 30px;
+  }
   /* #check:checked ~ .nav-menu {
     left: 0;
   } */
