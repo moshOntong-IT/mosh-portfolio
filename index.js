@@ -16,10 +16,12 @@ let replySubmit = () => {
 };
 let mediaQuery = (size) => {
   if (size.matches) {
-    document.getElementById("logo-home").src = "assets/logo-small.svg";
+    // document.getElementById("logo-home").src = "assets/logo-small.svg";
     logo.src = "assets/logo-small.svg";
+    logo.src = "../assets/logo-small.svg";
   } else {
     logo.src = "assets/logo.svg";
+    logo.src = "../assets/logo.svg";
   }
 };
 

@@ -5,7 +5,7 @@
   --background-gradient: linear-gradient(241.04deg, #c1fffc 0%, #ffffff 100%);
   --margin-bottom: 2rem;
   --margin-top: 2.5rem;
-  --main-background-linear: 540vh;
+  --main-background-linear: 560vh;
   --footer-height: 20vh;
 }
 * {
@@ -27,6 +27,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 15vh;
   padding: var(--padding-body);
   background: transparent;
   margin-bottom: var(--margin-bottom);
@@ -389,6 +390,9 @@ footer .social-media img:not(:nth-child(4)) {
     --main-background-linear: 740vh;
     --footer-height: 10vh;
   }
+  header {
+    height: 10vh;
+  }
 
   header .container nav #nav-menu {
     width: 100%;
@@ -580,6 +584,7 @@ footer .social-media img:not(:nth-child(4)) {
   footer .social-media img {
     width: 30px;
   }
+
   /* #check:checked ~ .nav-menu {
     left: 0;
   } */
