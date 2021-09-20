@@ -1,5 +1,7 @@
 let logo = document.getElementById("logo-home");
+let logo_2 = document.getElementById("logo-home-blog");
 let nav_menu = document.getElementById("nav-menu");
+let nav_menu_2 = document.getElementById("nav-menu");
 let burger_checking = document.getElementById("check");
 let header = document.querySelector("header");
 
@@ -18,10 +20,10 @@ let mediaQuery = (size) => {
   if (size.matches) {
     // document.getElementById("logo-home").src = "assets/logo-small.svg";
     logo.src = "assets/logo-small.svg";
-    logo.src = "../assets/logo-small.svg";
+    logo_2.src = "../assets/logo-small.svg";
   } else {
     logo.src = "assets/logo.svg";
-    logo.src = "../assets/logo.svg";
+    logo_2.src = "../assets/logo.svg";
   }
 };
 
