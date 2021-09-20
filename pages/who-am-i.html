@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Am I?</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="blog.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-blog">
+      <div class="container">
+        <input type="checkbox" id="check" onclick="nav_appear()" />
+        <div class="logo-container">
+          <a href="../index.html#landing-page"
+            ><img id="logo-home" src="../assets/logo.svg" alt=""
+          /></a>
+        </div>
+        <nav>
+          <div id="nav-menu">
+            <ul>
+              <li>
+                <a
+                  href="../index.html#about-section"
+                  id="about-nav"
+                  onclick="clickNavBar()"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../index.html#services-section"
+                  id="services-nav"
+                  onclick="clickNavBar()"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../index.html#skill-section"
+                  id="skills-nav"
+                  onclick="clickNavBar()"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../index.html#portfolio-section"
+                  id="portfolio-nav"
+                  onclick="clickNavBar()"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/who-am-i.html"
+                  id="blog-nav"
+                  onclick="clickNavBar()"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <label class="burger-menu" for="check">
+            <i class="fa fa-bars"></i>
+          </label>
+        </nav>
+      </div>
+    </header>
+
+    <div class="blog-container">
+      <main>
+        <div class="row">
+          <div class="title">
+            <h1>Who Am I?</h1>
+            <span>Published on September 20, 2021</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="blog-banner">
+            <img src="../assets/who-am-i.png" alt="banner" />
+          </div>
+        </div>
+        <div class="row">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>First Name</td>
+                <td>Muslimin</td>
+              </tr>
+              <tr>
+                <td>Middle Name</td>
+                <td>Banto</td>
+              </tr>
+              <tr>
+                <td>Last Name</td>
+                <td>Ontong</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Education Background</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Primary School</td>
+                <td>Tatayawan Elementary School</td>
+              </tr>
+              <tr>
+                <td>Secondary School</td>
+                <td>AMA Davao</td>
+              </tr>
+              <tr>
+                <td>College School</td>
+                <td>University of Immaculate School</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="../index.js"></script>
+  </body>
+</html>
